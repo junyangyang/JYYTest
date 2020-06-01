@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FC354FA4DF82439A11D2406 /* Pods_JYYTest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C50E0B1687ADC7BB4CAED6 /* Pods_JYYTest_Tests.framework */; };
+		515C168C248547E500D413FC /* JYYTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C168B248547E500D413FC /* JYYTestTool.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,7 +31,8 @@
 /* Begin PBXFileReference section */
 		05F62A7C0378A15F742D832D /* Pods-JYYTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYYTest_Tests.release.xcconfig"; path = "Target Support Files/Pods-JYYTest_Tests/Pods-JYYTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1C59124DC8276D092D6FCB99 /* Pods-JYYTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYYTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JYYTest_Tests/Pods-JYYTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E3DE8327A05E0086A64C063 /* JYYTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JYYTest.podspec; path = ../JYYTest.podspec; sourceTree = "<group>"; };
+		1E3DE8327A05E0086A64C063 /* JYYTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JYYTest.podspec; path = ../JYYTest.podspec; sourceTree = "<group>"; };
+		515C168B248547E500D413FC /* JYYTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JYYTestTool.swift; path = ../JYYTest/Classes/JYYTestTool.swift; sourceTree = "<group>"; };
 		5A24BF51D62F4B7AC096917E /* Pods-JYYTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYYTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-JYYTest_Example/Pods-JYYTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JYYTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYYTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +45,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		91C50E0B1687ADC7BB4CAED6 /* Pods_JYYTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYYTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BECA9E6BC9075CCF11B8BF26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BECA9E6BC9075CCF11B8BF26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C284A76F3BB76526F975C518 /* Pods_JYYTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYYTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCE4A59AF507AD5487019666 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DCE4A59AF507AD5487019666 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E1010D5D7DC9FEA89DE276F6 /* Pods-JYYTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYYTest_Example.release.xcconfig"; path = "Target Support Files/Pods-JYYTest_Example/Pods-JYYTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				515C168B248547E500D413FC /* JYYTestTool.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for JYYTest */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -147,7 +150,6 @@
 				1C59124DC8276D092D6FCB99 /* Pods-JYYTest_Tests.debug.xcconfig */,
 				05F62A7C0378A15F742D832D /* Pods-JYYTest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +230,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				515C168C248547E500D413FC /* JYYTestTool.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
