@@ -10,4 +10,6 @@ import UIKit
 
 public struct JYYToolTest{
     public static let msg = "helloworld,JYY!"
+    public static let helloworld = "helloworld,JYY!"
+
 }
